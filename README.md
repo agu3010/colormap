@@ -1,25 +1,28 @@
-# colormap [![Build Status](https://travis-ci.org/bpostlethwaite/colormap.png)](https://travis-ci.org/bpostlethwaite/colormap)
+
+
+# colormap
 
 ![all colormap output](./colormaps.png)
 
 ## Usage
 
-[![npm install colormap](https://nodei.co/npm/colormap.png?mini=true)](https://npmjs.org/package/colormap/)
 
-```js
-let colormap = require('colormap')
+### Raw HTML/JS
 
-let colors = colormap({
-    colormap: 'jet',
-    nshades: 10,
-    format: 'hex',
-    alpha: 1
-})
-```
+	let spec = {
+	    colormap: 'jet',
+	    nshades: 10,
+	    format: 'hex',
+	    alpha: 1
+	};
+
+	let colormap = createColormap(spec);
+
+### npm
+
+See [this](https://github.com/bpostlethwaite/colormap)
 
 ## API
-
-### list = colormap(options?)
 
 Property | Default | Meaning
 ---|---|---
@@ -30,5 +33,6 @@ Property | Default | Meaning
 
 
 ## Credits
+This is a raw js implementation of [bpostlethwaite](https://github.com/bpostlethwaite)'s [colormap](https://github.com/bpostlethwaite/colormap)
 
 Color maps are inspired by [matplotlib](https://github.com/d3/d3-scale#sequential-color-scales) color scales, [cmocean](https://github.com/matplotlib/cmocean) oceanographic colormaps, [cosine gradients](https://github.com/thi-ng/color/blob/master/src/gradients.org) and others. Thanks to authors of these libs for their invaluable work.
