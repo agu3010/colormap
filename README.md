@@ -9,6 +9,12 @@
 
 ### Raw HTML/JS
 
+Include the colormap script in HTML
+
+	<script src="colormap/colormap.js"></script>
+
+Create colormap with specifications in JS
+
 	let spec = {
 	    colormap: 'jet',
 	    nshades: 10,
@@ -20,7 +26,7 @@
 
 ### npm
 
-See [this](https://github.com/bpostlethwaite/colormap)
+See [this](https://github.com/bpostlethwaite/colormap#usage)
 
 ## API
 
